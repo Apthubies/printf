@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			++p;
 			generated = handle_print(format, &p, list, buffer,
 				isDataLoaded, breadth, resolution, magnitude);
-			if (printed == -1)
+			if (generated == -1)
 				return (-1);
 			generated_chars += generated;
 		}
